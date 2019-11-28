@@ -1,0 +1,19 @@
+{
+  "name": "node_game",
+  "version": "1.0.0",
+  "description": "Self-learning the process to make a nodeJS program.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ehawk82/node_game.git"
+  },
+  "author": "Ehawk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ehawk82/node_game/issues"
+  },
+  "homepage": "https://github.com/Ehawk82/node_game#readme"
+}
