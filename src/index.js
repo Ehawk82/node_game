@@ -1,6 +1,11 @@
-var http = require('http');
+var http = require('http'),
+	dt = require('./timeMod.js'),
+	fs = require('fs');
 
 http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Hello NodeJS!');
-}).listen(8081);
+ 	fs.readFile('index.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    res.end();
+  });
+}).listen(8080);
