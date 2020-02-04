@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "audit": "text_audit -t EHAWK",
     "start": "node src/index.js"
   },
   "repository": {
@@ -16,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/Ehawk82/node_game/issues"
   },
-  "homepage": "https://github.com/Ehawk82/node_game#readme"
+  "homepage": "https://github.com/Ehawk82/node_game#readme",
+  "devDependencies": {
+    "text_audit": "^0.9.3"
+  },
+  "dependencies": {
+    "formidable": "^1.2.1",
+    "upper-case": "^2.0.1"
+  }
 }
