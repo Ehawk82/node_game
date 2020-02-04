@@ -10,7 +10,12 @@ http.createServer(function (req, res) {
       var newpath = 'C:/Users/Public/Demo' + files.filetoupload.name;
       fs.rename(oldpath, newpath, function (err) {
         if (err) throw err;
-        res.write('File uploaded and moved!');
+        console.log(files);
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        res.write('<div>');
+        res.write('<p>DONE!</p>');
+        res.write('<input value="HOME" type="submit">');
+        res.write('</div>');
         res.end();
       });
  });
